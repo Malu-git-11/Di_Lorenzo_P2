@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o escritório Di Lorenzo Advocacia.">
+  <title>Fale Conosco | Di Lorenzo Advocacia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Di Lorenzo Advocacia - início">
+      <span class="brand-mark" aria-hidden="true">⚖</span>
+      <span class="brand-name">Di Lorenzo<small>ADVOCACIA</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+      <a class="active" href="index.html" aria-current="page">Fale Conosco</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-contact">
+      <div class="hero-copy">
+        <p class="eyebrow">DI LORENZO ADVOCACIA</p>
+        <h1>Fale<br>Conosco</h1>
+        <span class="gold-line"></span>
+        <p>Estamos aqui para ouvir você. Entre em contato com a nossa equipe.</p>
+      </div>
+      <img class="hero-art" src="assets/img/justica.svg" alt="Ilustração de uma balança da Justiça">
+    </section>
+
+    <section class="content-section contact-layout">
+      <div class="section-intro">
+        <p class="eyebrow">ESTAMOS À DISPOSIÇÃO</p>
+        <h2>Como podemos ajudar?</h2>
+        <p>Preencha o formulário e envie sua mensagem. Nossa equipe poderá entrar em contato para orientar você.</p>
+        <div class="contact-detail"><span class="detail-icon">✉</span><span><strong>E-mail</strong><br>contato@dilorenzo.adv.br</span></div>
+        <div class="contact-detail"><span class="detail-icon">⌖</span><span><strong>Endereço</strong><br>São Paulo – SP</span></div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label for="name">Nome completo</label>
+        <input id="name" name="name" type="text" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+
+        <label for="subject">Assunto</label>
+        <input id="subject" name="subject" type="text" placeholder="Sobre o que deseja falar?">
+
+        <label for="message">Sua mensagem</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button class="button button-primary" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        <p class="form-note">Demonstração visual: o formulário não envia dados para um servidor.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">Di Lorenzo <span>ADVOCACIA</span></a>
+    <p>Ética, compromisso e transparência.</p>
+    <small>© 2026 Di Lorenzo Advocacia. Projeto acadêmico.</small>
+  </footer>
+</body>
+</html>
